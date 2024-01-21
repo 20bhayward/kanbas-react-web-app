@@ -1,4 +1,6 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+git .vscode
+node_modules
 
 # dependencies
 /node_modules
@@ -18,6 +20,5 @@
 .env.test.local
 .env.production.local
 
-npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
