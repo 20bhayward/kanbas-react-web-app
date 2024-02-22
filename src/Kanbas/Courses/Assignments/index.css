@@ -1,0 +1,45 @@
+.assignment-header .search-assignment {
+    max-width: 300px;
+    /* Adjust as needed */
+}
+
+.button-group button {
+    margin-left: 0.5rem;
+    /* Spacing between buttons */
+}
+
+.wd-assignments .list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    /* Adjust padding as needed */
+}
+
+.wd-assignments .icon-ellipsis {
+    color: #6c757d;
+    /* Dark gray color */
+    margin-right: 0.5rem;
+    /* Spacing after the ellipses */
+}
+
+.wd-assignments .icon-pencil {
+    color: red;
+    /* Red color for the pencil icon */
+    margin-right: 0.5rem;
+    /* Spacing after the pencil icon */
+}
+
+.assignment-details {
+    color: #6c757d;
+    /* Dark gray text for details */
+    font-size: 0.9em;
+}
+
+.wd-assignments .list-group-item a {
+    color: #343a40;
+    text-decoration: none;
+}
+
+.wd-assignments .list-group-item a:hover {
+    text-decoration: underline;
+}

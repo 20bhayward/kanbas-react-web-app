@@ -1,0 +1,58 @@
+[
+    {
+        "_id": "COOK4500",
+        "name": "Advanced Cooking",
+        "number": "COOK4500",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "cooking.jpeg"
+    },
+    {
+        "_id": "GAME2500",
+        "name": "Gaming Tech",
+        "number": "GAME2500",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "gaming.jpeg"
+    },
+    {
+        "_id": "SMITH2500",
+        "name": "Blacksmithing",
+        "number": "SMITH2500",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "smithing.jpeg"
+    },
+    {
+        "_id": "COOK4520",
+        "name": "Nuclear Baking",
+        "number": "COOK4520",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "baking.jpeg"
+    },
+    {
+        "_id": "CAKE999",
+        "name": "The Cake Is A Lie",
+        "number": "CAKE999",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "cake.jpeg"
+    },
+    {
+        "_id": "OSRS1001",
+        "name": "Giants Foundry",
+        "number": "OSRS1001",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "OSRS.jpeg"
+    },
+    {
+        "_id": "FISH101",
+        "name": "Fish Basics",
+        "number": "FISH101",
+        "startDate": "2024-09-07",
+        "endDate": "2024-12-15",
+        "image": "fishing.jpeg"
+    }
+]

@@ -39,9 +39,9 @@
     background-color: black;
     color: white;
     padding: 10px 15px;
-    z-index: 1030; /* Above sidebars and content */
+    z-index: 1030;
 }
 
 .nav-link {
-    color: red; /* Or any color that fits your design */
+    color: red;
 }
