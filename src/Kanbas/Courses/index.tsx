@@ -10,7 +10,7 @@ import Home from "./Home";
 import { FaGlasses } from "react-icons/fa";
 import Assignments from "./Assignments";
 
-function Courses() {
+function Courses({ courses }: { courses: any[]; }) {
     const { courseId } = useParams();
     const { pathname } = useLocation();
     const course = courses.find((c) => c._id === courseId);
