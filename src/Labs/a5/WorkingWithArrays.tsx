@@ -10,12 +10,11 @@ function WorkingWithArrays() {
         due: "2021-09-09",
         completed: false,
     });
-    const [todos, setTodos] = useState([todo]);
+    const [todos, setTodos] = useState<any>([]);
     const postTodo = async () => {
         const response = await axios.post(API, todo);
         setTodos([...todos, response.data]);
     };
-
     const fetchTodos = async () => {
         const response = await axios.get(API);
         setTodos(response.data);
@@ -27,7 +26,7 @@ function WorkingWithArrays() {
     // };
     const deleteTodo = async (todo: { id: any; completed?: any; title?: any; description?: any; due?: any; }) => {
         const response = await axios.delete(`${API}/${todo.id}`);
-        setTodos(todos.filter((t) => t.id !== todo.id));
+        setTodos(todos.filter((t: { id: number; }) => t.id !== todo.id));
     };
 
     const createTodo = async () => {
@@ -41,8 +40,8 @@ function WorkingWithArrays() {
     };
     const updateTodo = async () => {
         const response = await axios.put(`${API}/${todo.id}`, todo);
-        setTodos(todos.map((t) => (t.id === todo.id ? todo : t)));
-    };
+        setTodos(todos.map((t: { id: number; }) => (t.id === todo.id ? todo : t)));
+      };    
     const updateTitle = async () => {
         const response = await axios.get(`${API}/${todo.id}/title/${todo.title}`);
         setTodos(response.data);
@@ -59,11 +58,13 @@ function WorkingWithArrays() {
                 value={todo.id}
                 onChange={(e) => setTodo({ ...todo, id: parseInt(e.target.value) })}
             />
+            <br />
             <input
                 type="text"
                 value={todo.title}
                 onChange={(e) => setTodo({ ...todo, title: e.target.value })}
             />
+            <br />
             {/* <input
                 type="text"
                 value={todo.description}
@@ -80,10 +81,12 @@ function WorkingWithArrays() {
                     ...todo,
                     description: e.target.value
                 })} />
+            <br />
             <input value={todo.due} type="date"
                 onChange={(e) => setTodo({
                     ...todo, due: e.target.value
                 })} />
+            <br />
             <label>
                 <input type="checkbox"
                     onChange={(e) => setTodo({
@@ -91,7 +94,11 @@ function WorkingWithArrays() {
                     })} checked={todo.completed} />
                 Completed
             </label>
-            <button onClick={postTodo}> Post Todo </button>
+            <br />
+            <button onClick={postTodo}> 
+                Post Todo 
+            </button>
+            <br />
             <button onClick={updateTodo}>
                 Update Todo
             </button>
@@ -149,14 +156,13 @@ function WorkingWithArrays() {
                 Update Title
             </button>
             <ul>
-                {todos.map((todo: { id: any; completed?: any; title?: any; description?: any; due?: any; }) => (
+                {todos.map((todo: { id: number; completed: boolean; title: string; description: string; due: string; }) => (
                     <li key={todo.id} className="list-group-item">
                         <input checked={todo.completed}
                             type="checkbox" readOnly />
                         {todo.title}
                         <p>{todo.description}</p>
                         <p>{todo.due}</p>
-
                         <button onClick={() => fetchTodoById(todo.id)} >
                             Edit
                         </button>

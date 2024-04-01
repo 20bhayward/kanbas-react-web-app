@@ -1,129 +1,119 @@
 export default [
-    {
-      "_id": "COOK4500-M1",
-      "name": "Advanced Cooking Techniques",
-      "description": "Mastering advanced culinary techniques.",
-      "course": "COOK4500",
-      "lessons": [
-        {
-          "_id": "L1",
-          "name": "Sous-vide Cooking",
-          "description": "An introduction to sous-vide cooking methods."
-        },
-        {
-          "_id": "L2",
-          "name": "Molecular Gastronomy",
-          "description": "Exploring the science behind molecular gastronomy."
-        }
-      ]
-    },
-    {
-      "_id": "GAME2500-M1",
-      "name": "Gaming Technology Fundamentals",
-      "description": "Fundamentals of modern gaming technologies.",
-      "course": "GAME2500",
-      "lessons": [
-        {
-          "_id": "L1",
-          "name": "Game Engines",
-          "description": "Overview of popular game engines."
-        },
-        {
-          "_id": "L2",
-          "name": "Game Graphics",
-          "description": "Understanding graphics in video games."
-        }
-      ]
-    },
-    {
-      "_id": "SMITH2500-M1",
-      "name": "Blacksmithing Basics",
-      "description": "The basics of blacksmithing and metalworking.",
-      "course": "SMITH2500",
-      "lessons": [
-        {
-          "_id": "L1",
-          "name": "Forging Techniques",
-          "description": "Basic forging techniques for beginners."
-        },
-        {
-          "_id": "L2",
-          "name": "Metal Properties",
-          "description": "Understanding different metal properties in smithing."
-        }
-      ]
-    },
-    {
-        "_id": "FISH101-M1",
-        "name": "Introduction to Fishing",
-        "description": "An overview of fishing techniques and equipment.",
-        "course": "FISH101",
-        "lessons": [
-          {
-            "_id": "L1",
-            "name": "Choosing the Right Equipment",
-            "description": "Learn how to select the best fishing rods, reels, and tackle."
-          },
-          {
-            "_id": "L2",
-            "name": "Bait and Lures",
-            "description": "Understanding the different types of bait and lures used for various fish species."
-          }
-        ]
+  {
+    _id: "M101",
+    name: "Introduction to Rocket Propulsion",
+    description: "Basic principles of rocket propulsion and rocket engines.",
+    course: "RS101",
+    lessons: [
+      {
+        _id: "L101",
+        name: "History of Rocketry",
+        description: "A brief history of rocketry and space exploration.",
+        module: "M101",
       },
       {
-        "_id": "OSRS1001-M1",
-        "name": "Giants Foundry Techniques",
-        "description": "Mastering the art of giant metalwork.",
-        "course": "OSRS1001",
-        "lessons": [
-          {
-            "_id": "L1",
-            "name": "Melting and Molding",
-            "description": "Techniques for melting and molding large metal structures."
-          },
-          {
-            "_id": "L2",
-            "name": "Finishing Touches",
-            "description": "Advanced finishing techniques for giant metalworks."
-          }
-        ]
+        _id: "L102",
+        name: "Rocket Propulsion Fundamentals",
+        description: "Basic principles of rocket propulsion.",
+        module: "M101",
       },
       {
-        "_id": "COOK4520-M1",
-        "name": "Nuclear Baking Methods",
-        "description": "Discover the secrets of high-energy pastries.",
-        "course": "COOK4520",
-        "lessons": [
-          {
-            "_id": "L1",
-            "name": "Radiant Recipes",
-            "description": "Creating recipes that glow with flavor."
-          },
-          {
-            "_id": "L2",
-            "name": "Fission in the Kitchen",
-            "description": "Understanding the principles of nuclear fission in baking."
-          }
-        ]
+        _id: "L103",
+        name: "Rocket Engine Types",
+        description: "Overview of different types of rocket engines.",
+        module: "M101",
+      },
+    ],
+  },
+  {
+    _id: "M102",
+    name: "Fuel and Combustion",
+    description:
+      "Understanding rocket fuel, combustion processes, and efficiency.",
+    course: "RS101",
+    lessons: [
+      {
+        _id: "L201",
+        name: "Rocket Fuel",
+        description: "Overview of different types of rocket fuels.",
+        module: "M102",
       },
       {
-        "_id": "CAKE999-M1",
-        "name": "The Philosophy of Cake",
-        "description": "Exploring the deeper meanings and myths of cake.",
-        "course": "CAKE999",
-        "lessons": [
-          {
-            "_id": "L1",
-            "name": "Cake Myths",
-            "description": "Debunking the most common cake myths."
-          },
-          {
-            "_id": "L2",
-            "name": "Cake as a Metaphor",
-            "description": "Understanding how cake represents life's complexities."
-          }
-        ]
-      }
-  ]
-  
+        _id: "L202",
+        name: "Combustion Processes",
+        description: "Understanding combustion processes and efficiency.",
+        module: "M102",
+      },
+      {
+        _id: "L203",
+        name: "Combustion Instability",
+        description: "Understanding combustion instability and mitigation.",
+        module: "M102",
+      },
+    ],
+  },
+  {
+    _id: "M103",
+    name: "Nozzle Design",
+    description:
+      "Principles of rocket nozzle design and performance optimization.",
+    course: "RS101",
+    lessons: [
+      {
+        _id: "L301",
+        name: "Nozzle Design",
+        description: "Overview of different types of rocket nozzles.",
+        module: "M103",
+      },
+      {
+        _id: "L302",
+        name: "Nozzle Performance",
+        description: "Understanding nozzle performance and efficiency.",
+        module: "M103",
+      },
+      {
+        _id: "L303",
+        name: "Nozzle Optimization",
+        description: "Optimizing nozzle design for specific applications.",
+        module: "M103",
+      },
+    ],
+  },
+  {
+    _id: "M201",
+    name: "Fundamentals of Aerodynamics",
+    description: "Basic aerodynamic concepts and fluid dynamics principles.",
+    course: "RS102",
+  },
+  {
+    _id: "M202",
+    name: "Subsonic and Supersonic Flow",
+    description: "Understanding subsonic and supersonic aerodynamic behaviors.",
+    course: "RS102",
+  },
+  {
+    _id: "M203",
+    name: "Aerodynamic Heating",
+    description: "Study of aerodynamic heating and thermal protection systems.",
+    course: "RS102",
+  },
+  {
+    _id: "M301",
+    name: "Spacecraft Structural Design",
+    description:
+      "Fundamentals of designing spacecraft structures and materials selection.",
+    course: "RS103",
+  },
+  {
+    _id: "M302",
+    name: "Orbital Mechanics",
+    description: "Understanding orbital dynamics and mission planning.",
+    course: "RS103",
+  },
+  {
+    _id: "M303",
+    name: "Spacecraft Systems Engineering",
+    description: "Overview of spacecraft systems and subsystems engineering.",
+    course: "RS103",
+  },
+];

@@ -99,6 +99,14 @@ const Lab5 = (app) => {
     todos.push(newTodo);
     res.json(newTodo);
   });
+  app.get("/a5/todos/create", (req, res) => {
+    const newTodo = {
+      id: new Date().getTime(),
+      title: "New Task", completed: false,
+    };
+    todos.push(newTodo);
+    res.json(todos);
+  });
 
   app.get("/a5/todos", (req, res) => {
     const { completed } = req.query;
@@ -139,6 +147,7 @@ const Lab5 = (app) => {
     todo.title = title;
     res.json(todos);
   });
+
   app.get("/a5/todos/:id/description/:description", (req, res) => {
     const { id, description } = req.params;
     const todo = todos.find((t) => t.id === parseInt(id));

@@ -1,18 +1,43 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./index.css";
 import { modules } from "../../Database";
 import { FaEllipsisV, FaCheckCircle, FaPlusCircle, FaCheck, FaGlasses, FaXRay, FaXbox, FaTimes, FaTimesCircle } from "react-icons/fa";
 import { useParams } from "react-router";
 import { useSelector, useDispatch } from "react-redux";
 import {
-    addModule,
     deleteModule,
-    updateModule,
-    setModule,
+    addModule, updateModule,
+    setModule, setModules,
 } from "./reducer";
+import * as client from "./client";
 import { KanbasState } from "../../store";
 function ModuleList() {
     const { courseId } = useParams();
+    useEffect(() => {
+        client.findModulesForCourse(courseId)
+            .then((modules) =>
+                dispatch(setModules(modules))
+            );
+    }, [courseId]);
+
+    const handleAddModule = () => {
+        client.createModule(courseId, module).then((module) => {
+            dispatch(addModule(module));
+        });
+    };
+    const handleDeleteModule = (moduleId: string) => {
+        client.deleteModule(moduleId).then((status) => {
+            dispatch(deleteModule(moduleId));
+        });
+    };
+
+    const handleUpdateModule = async () => {
+        const status = await client.updateModule(module);
+        dispatch(updateModule(module));
+      };
+    
+
+
     const moduleList = useSelector((state: KanbasState) =>
         state.modulesReducer.modules);
     const module = useSelector((state: KanbasState) =>
@@ -68,11 +93,11 @@ function ModuleList() {
                             />
                             <button
                                 className="btn btn-custom-light"
-                                onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+                                onClick={handleAddModule}
                             >
                                 Add
                             </button>
-                            <button className="btn btn-custom-light" onClick={() => dispatch(updateModule(module))}>
+                            <button className="btn btn-custom-light" onClick={handleUpdateModule}>
                                 Update
                             </button>
 
@@ -97,10 +122,7 @@ function ModuleList() {
                                     &ensp;
                                     <button
                                         className="btn btn-custom-light"
-                                        onClick={(e) => {
-                                            e.stopPropagation(); // Prevent onClick from bubbling to the li element
-                                            dispatch(deleteModule(mod._id));
-                                        }}>
+                                        onClick={() => { handleDeleteModule(mod._id) }}>
                                         <FaTimesCircle className="text-danger" />
                                     </button>
                                     <FaEllipsisV className="ms-2" />

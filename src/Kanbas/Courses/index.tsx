@@ -9,11 +9,25 @@ import Modules from "./Modules";
 import Home from "./Home";
 import { FaGlasses } from "react-icons/fa";
 import Assignments from "./Assignments";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }: { courses: any[]; }) {
+function Courses() {
     const { courseId } = useParams();
+    const COURSES_API = "http://localhost:4000/api/courses";
+    const [course, setCourse] = useState<any>({ _id: "" });
+    const findCourseById = async (courseId?: string) => {
+      const response = await axios.get(
+        `${COURSES_API}/${courseId}`
+      );
+      setCourse(response.data);
+    };
+    useEffect(() => {
+        findCourseById(courseId);
+      }, [courseId]);
+    
     const { pathname } = useLocation();
-    const course = courses.find((c) => c._id === courseId);
+    //const course = courses.find((c) => c._id === courseId);
     const pathParts = pathname.split('/').filter(x => x); // Remove empty parts from the path
     const currentPart = pathParts[pathParts.length - 1];
 
