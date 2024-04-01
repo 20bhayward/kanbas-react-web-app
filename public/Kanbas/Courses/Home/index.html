@@ -1,82 +1,78 @@
 <html>
-<table>
-    <tbody>
-        <tr>
-            <td valign="top">
-                <body>
-                    <button type="button">Collapse All</button>
-                    <button type="button">View Progress</button>
-                    <select id="Actions">
-                        <option>Publish all</option>
-                    </select>
-                    <button type="button">Module</button>
-                    <ul>
-                        <li>Week 0: INTRO</li>
-                        <ul>
-                            <li>LEARNING OBJECTIVES</li>
-                            <ul>
-                                <li>Begin the course</li>
-                                <li>Learn the syllabus</li>
-                                <li>Learn the history of the internet and HTML</li>
-                                <li>Setup laptop</li>
-                                <li>Finish homework</li>
-                            </ul>
-                            <li>READING</li>
-                            <ul>
-                                <li>The textbook</li>
-                                <li>My notes</li>
-                                <li>The slides</li>
-                            </ul>
-                            <li>SLIDES</li>
-                            <ul>
-                                <li><a href="https://www.reddit.com">Check out reddit</a></li>
-                                <li><a href="https://www.x.com">Check out twitter</a></li>
-                                <li><a href="https://www.lipsum.com">Suprise lipsum</a></li>
-                            </ul>
-                        </ul>
-                        <li>Week 1: HTML</li>
-                        <ul>
-                            <li>LEARNING OBJECTIVES</li>
-                            <ul>
-                                <li>Begin the course</li>
-                                <li>Learn the syllabus</li>
-                                <li>Learn the history</li>
-                                <li>Setup laptop</li>
-                                <li>Finish homework</li>
-                            </ul>
-                            <li>READING</li>
-                            <ul>
-                                <li>The textbook</li>
-                                <li>My notes</li>
-                                <li>The slides</li>
-                            </ul>
-                        </ul>
-                    </ul>
-                </body>
-            </td>
-            <td valign="top">
-                <h2>Course Status</h2>
-                    <button>Unpublish</button>
-                    <button>Published</button>
-                    <ul>
-                        <li><a href="https://www.lipsum.com">Import existing content</a></li>
-                        <li><a href="https://www.lipsum.com">Import from commons</a></li>
-                        <li><a href="https://www.lipsum.com">Choose home page</a></li>
-                        <li><a href="https://www.lipsum.com">View course stream</a></li>
-                        <li><a href="https://www.lipsum.com">New announcement</a></li>
-                        <li><a href="https://www.lipsum.com">New analytics</a></li>
-                        <li><a href="https://www.lipsum.com">View course notifications</a></li>
-                    </ul>
-                <h2>Coming Up</h2>
-                <a href="https://www.lipsum.com">View Calendar</a>
-                <ol>
-                    <li><a href="https://www.lipsum.com">Lecture 1</a></li>
-                    <li><a href="https://www.lipsum.com">Lecture 2</a></li>
-                    <li><a href="https://www.lipsum.com">Lecture 3</a></li>
-                </ol>
-            </td>
-        </tr>
-    </tbody>
-</table>
+
+<head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css" />
+</head>
+
+<body>
+    <div class="mb-2">
+        <button type="button" class="btn btn-secondary">Collapse All</button>
+        <button type="button" class="btn btn-secondary">View Progress</button>
+    </div>
+    <br />
+    <ul class="list-group wd-modules">
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> Week 1
+                <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> Learning Objectives
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> Assignment 1
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> Assignment 2
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+        </li>
+        <li class="list-group-item">
+            <div>
+                <i class="fa fa-ellipsis-v"></i> Week 2
+                <span class="float-end">
+                    <i class="fa fa-check-circle text-success"></i>
+                    <i class="fa fa-plus ms-2"></i>
+                    <i class="fa fa-ellipsis-v ms-2"></i>
+                </span>
+            </div>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> Learning Objectives
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+                <li class="list-group-item">
+                    <i class="fa fa-ellipsis-v"></i> Assignment 3
+                    <span class="float-end">
+                        <i class="fa fa-check-circle text-success"></i>
+                        <i class="fa fa-ellipsis-v ms-2"></i>
+                    </span>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
 
 </html>

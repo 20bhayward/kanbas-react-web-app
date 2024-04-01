@@ -1,0 +1,20 @@
+.card-custom {
+  width: 300px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+/* Ensuring that the card's width and margin do not change with the window size */
+.col-lg-3,
+.col-md-4,
+.col-sm-6,
+.col-xs-12 {
+  display: flex;
+}
+
+.image-top {
+  height: 150px;
+  background-color: #002fff;
+  background-size: cover;
+  background-position: center;
+}

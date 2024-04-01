@@ -1,0 +1,21 @@
+.course-header {
+    font-size: 20px;
+    color: rgb(181, 28, 28);
+    display: flex;
+    align-items: center;
+}
+
+.course-header .menu-icon {
+    margin-right: 10px;
+    font-size: 2rem;
+}
+
+.breadcrumb-item {
+    padding-top: 15px;
+    color: rgb(181, 28, 28); 
+    text-decoration: none;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    content: ">"; 
+}

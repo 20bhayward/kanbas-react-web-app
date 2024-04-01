@@ -1,0 +1,122 @@
+[
+    {
+        "_id": "ASSIGN1",
+        "title": "Exotic Ingredients Exploration",
+        "course": "COOK4500",
+        "dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN2",
+        "title": "5-Star Recipe Development",
+        "course": "COOK4500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN3",
+        "title": "Sustainable Cooking Practices Essay",
+        "course": "COOK4500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN4",
+        "title": "History of Video Games",
+        "course": "GAME2500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN5",
+        "title": "Game Physics Research Paper",
+        "course": "GAME2500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN6",
+        "title": "Character Design Portfolio",
+        "course": "GAME2500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN7",
+        "title": "Modern Smithing Techniques",
+        "course": "SMITH2500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN8",
+        "title": "Crafting Your First Sword",
+        "course": "SMITH2500", "dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN9",
+        "title": "Metalwork Artistry Presentation",
+        "course": "SMITH2500","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN10",
+        "title": "Gluten-Free Baking Secrets",
+        "course": "COOK4520","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN11",
+        "title": "Advanced Pastry Techniques",
+        "course": "COOK4520"
+    },
+    {
+        "_id": "ASSIGN12",
+        "title": "Nuclear Baking Experiment Log",
+        "course": "COOK4520","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN13",
+        "title": "Deconstructing Portal Theories",
+        "course": "CAKE999","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN14",
+        "title": "Reality vs. Fiction in Baking",
+        "course": "CAKE999","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN15",
+        "title": "Foundry Innovations Research",
+        "course": "OSRS1001","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN16",
+        "title": "Metal Casting Techniques",
+        "course": "OSRS1001","dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN17",
+        "title": "Giants' Lore and History",
+        "course": "OSRS1001", "dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN18",
+        "title": "Basic Fishing Knots",
+        "course": "FISH101", "dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN19",
+        "title": "Sustainable Fishing Practices",
+        "course": "FISH101", "dueDate": "2023-09-18",
+        "points": 100
+    },
+    {
+        "_id": "ASSIGN20",
+        "title": "Aquatic Ecosystems Essay",
+        "course": "FISH101","dueDate": "2023-09-18",
+        "points": 100
+    }
+]
