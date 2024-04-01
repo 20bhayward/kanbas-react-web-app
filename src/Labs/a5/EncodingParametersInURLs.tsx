@@ -34,8 +34,7 @@ function EncodingParametersInURLs() {
         onChange={(e) => setA(parseInt(e.target.value))} />
       <input type="number"
         onChange={(e) => setB(parseInt(e.target.value))} value={b} />
-        
-      <input value={result} type="number" readOnly />
+      <input value={a + b} type="number" readOnly />
       <h3>Fetch Result</h3>
       <button onClick={() => fetchSum(a, b)} >
         Fetch Sum of {a} + {b}
