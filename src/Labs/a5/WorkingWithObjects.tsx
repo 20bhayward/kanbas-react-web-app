@@ -12,7 +12,7 @@ function WorkingWithObjects() {
         description: "Introduction to Node.js and Express.js",
         course: "Web Development",
     });
-    const ASSIGNMENT_URL = "http://localhost:4000/a5/assignment";
+    const ASSIGNMENT_URL = `${process.env.REACT_APP_API_BASE}/a5/assignment`;
     const fetchAssignment = async () => {
         const response = await axios.get(`${ASSIGNMENT_URL}`);
         setAssignment(response.data);
@@ -26,7 +26,7 @@ function WorkingWithObjects() {
         fetchAssignment();
     }, []);
 
-    const MODULE_URL = "http://localhost:4000/a5/module"
+    const MODULE_URL = `${process.env.REACT_APP_API_BASE}/a5/module`
     return (
         <div>
             <h3>Working With Objects</h3>
@@ -52,20 +52,20 @@ function WorkingWithObjects() {
                 })}
                 value={assignment.title} />
             <h4>Retrieving Objects</h4>
-            <a href="http://localhost:4000/a5/assignment">
+            <a href={`${process.env.REACT_APP_API_BASE}/a5/assignment`}>
                 Get Assignment
             </a>
             <h4>Retrieving Properties</h4>
-            <a href="http://localhost:4000/a5/assignment/title">
+            <a href={`${process.env.REACT_APP_API_BASE}/a5/assignment/title`}>
                 Get Title
             </a>
             <h4>Retrieving Module</h4>
-            <a href="http://localhost:4000/a5/module">
+            <a href={`${process.env.REACT_APP_API_BASE}/a5/module`}>
                 Get Module
             </a>
 
             <h4>Retrieving Module Name</h4>
-            <a href="http://localhost:4000/a5/module/name">
+            <a href={`${process.env.REACT_APP_API_BASE}/a5/module/name`}>
                 Get Module Name
             </a>
 
