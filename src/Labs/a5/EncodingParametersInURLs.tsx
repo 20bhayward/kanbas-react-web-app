@@ -10,12 +10,12 @@ function EncodingParametersInURLs() {
   };
   const [result, setResult] = useState(0);
   const fetchSum = async (a: number, b: number) => {
-    const response = await axios.get(`${process.env.REACT_APP_API_BASE}/a5/welcome`);
+    const response = await axios.get(`${process.env.REACT_APP_API_BASE}/a5/add/${a}/${b}`);
     setResult(response.data);
   };
+  
   const fetchSubtraction = async (a: number, b: number) => {
-    const response = await axios.get(
-      `${process.env.REACT_APP_API_BASE}/${a}/${b}`);
+    const response = await axios.get(`${process.env.REACT_APP_API_BASE}/a5/subtract/${a}/${b}`);
     setResult(response.data);
   };
 
@@ -34,7 +34,7 @@ function EncodingParametersInURLs() {
         onChange={(e) => setA(parseInt(e.target.value))} />
       <input type="number"
         onChange={(e) => setB(parseInt(e.target.value))} value={b} />
-      <input value={a + b} type="number" readOnly />
+      <input value={result} type="number" readOnly />
       <h3>Fetch Result</h3>
       <button onClick={() => fetchSum(a, b)} >
         Fetch Sum of {a} + {b}
