@@ -22,5 +22,5 @@
   },
   "include": [
     "src"
-  ]
+, "src/Users/Profile.tsx", "src/Users/Signin.tsx", "src/Users/Signup.tsx", "src/Users/Table.tsx"  ]
 }
