@@ -25,11 +25,9 @@ export default function Profile() {
   return (
     <div>
       <h1>Profile</h1>
-      {profile.role === "ADMIN" && (
-        <Link to="/Kanbas/Account/Admin/Users" className="btn btn-warning w-100">
-          Users
-        </Link>
-      )}
+      <Link to="/Kanbas/Account/Admin/Users" className="btn btn-warning w-100">
+        Users
+      </Link>
       {profile && (
         <div>
           <input value={profile.username} onChange={(e) =>
